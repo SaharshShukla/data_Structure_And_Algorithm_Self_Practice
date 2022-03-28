@@ -1,4 +1,6 @@
-1)simple binary search
+Binary Search question
+---------------------------------------
+1) simple binary search
 2) binary search using recursion
 3) First and last occurrence in an array using binary search
 4) frequency of element in array using binary search
