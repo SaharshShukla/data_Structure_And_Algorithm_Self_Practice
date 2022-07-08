@@ -1,7 +1,5 @@
 package collectionsFrameWork.ArrayList;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class LearnArrayList {
 
@@ -39,30 +37,50 @@ public class LearnArrayList {
 
         //search();
         //linearSearch();
-        removeAllOccurrence();
+
+       removeAllOccurrence();
+
+        //printing reverse array using recursion
+     /*   int[] arr = {1, 2, 3, 4, 5};
+        int leng = arr.length - 1;
+        reverse(arr, leng);*/
     }
 
+
+
+
+
+    static void reverse(int[] arr, int index){
+
+        if(index == 0){
+            System.out.print(arr[index] + " ");
+            return;
+        }
+        System.out.print(arr[index] + " ");
+
+        reverse(arr, index - 1);
+    }
+
+
     static void removeAllOccurrence(){
+
 
         List <String> al = new ArrayList<String>();
 
         al.add("saharsh");
         al.add("ravi");
-        al.add("abhishek");
-        al.add("rohit");
-        al.add("apekshit");
         al.add("saharsh");
-        al.add("ravi");
+        al.add("saharsh");
+        al.add("saharsh");
+        al.add("rahul");
+
 
         System.out.println("Arraylist before removing");
         System.out.println(al);
 
-        for(int i = 0; i < al.size(); i++){
-            if(al.get(i).equals("saharsh")){
-                al.remove(al.get(i));
-            }
+        //removing all the occurrence of an element
+        al.removeAll(Collections.singleton("saharsh"));
 
-        }
         System.out.println("Arraylist after removing");
         System.out.println(al);
 
