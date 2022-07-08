@@ -39,10 +39,13 @@ public class LearnArrayList {
 
         //search();
         //linearSearch();
+
         removeAllOccurrence();
     }
 
+
     static void removeAllOccurrence(){
+
 
         List <String> al = new ArrayList<String>();
 
