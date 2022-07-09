@@ -92,7 +92,7 @@ public class LearnArrayList {
 
     //hetrogenius datatype
     static void search(){
-        List al = new ArrayList(); // her we have not metione data type so
+        List al = new ArrayList(); // her we have not mentioned data type so
         al.add(1);
         al.add(2);
         al.add(3);
